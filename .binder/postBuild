@@ -1,1 +1,9 @@
+#!/bin/bash
+# Install Apache Toree and register Scala kernel with Spark
+
+# Install Toree kernel
+pip install toree
+
+# Register Scala interpreter using Spark
+jupyter toree install --spark_home=/usr/local/spark --interpreters=Scala
 
